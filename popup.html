@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Study Blocker</title>
+    <style>
+      body { font-family: Arial, sans-serif; width: 280px; padding: 12px; }
+      h2 { margin-top: 0; }
+      input, button { width: 100%; padding: 8px; margin-bottom: 8px; box-sizing: border-box; }
+      button { cursor: pointer; }
+      li { margin-bottom: 6px; }
+      .small { color: #666; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h2>Study Blocker</h2>
+
+    <input id="siteInput" type="text" placeholder="Website (e.g. youtube.com)" />
+    <input id="minutesInput" type="number" placeholder="Minutes to block" min="1" />
+    <button id="blockBtn">Block it</button>
+
+    <h3>Currently blocked</h3>
+    <ul id="blockedList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
